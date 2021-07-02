@@ -3,8 +3,8 @@ const cors = require("cors");
 const express = require("express");
 
 // PACKAGES INIT //
-const app = express();
 app.use(cors());
+const app = express();
 
 app.get("/", (req, res) => {
   return res.json({
